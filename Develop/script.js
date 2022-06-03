@@ -62,17 +62,7 @@ $(document).ready(function () {
             $(this).addClass("future");
         }
         //set items in local storage
-        $(".saveBtn").click(function (event) {
-            event.preventDefault();
-            var value = $(this).siblings(".time-block").val();
-            console.log(value)
-
-            var time = $(this).parent().attr("id").split("-")[1];
-
-            console.log(time)
-            localStorage.setItem(time, value);
-
-        });
+        
 
         // load data from Local Storage
         $("#hour9 .time-block").val(localStorage.getItem("hour9"));
@@ -86,67 +76,5 @@ $(document).ready(function () {
         $("#hour17 .time-block").val(localStorage.getItem("hour17"));
 
     });
-
-
-
-
-
-
-    // let addEventListener=button("click"col-md-1-saveBtn");
-
-    //set items in local storage
-
-    //button function to clear local storage and delete 
-    // window.localStorage.setItem('add-another-tiem-to-ls').addEventListener("click", function()){
-
-    //check the time if it is past, present or future
-    // if (blockHour < currentHour) {
-    //     $(this).addClass("past");
-    //     $(this).removeClass("present");
-    //     $(this).removeClass("future");
-    // }
-    // else if (blockHour === currentHour) {
-    //     $(this).removeClass("past");
-    //     $(this).addClass("present");
-    //     $(this).removeClass("future");
-    // }
-    // else {
-    //     $(this).removeClass("past");
-    //     $(this).removeClass("present");
-    //     $(this).addClass("future");
-    // }
-
-
-    //     localStorage.setItem('users')
-    //     JSON.stringify({name:""})
-
-    //     updateUI()
-    // )}
-
-    // To display the correct color
-    // 1. for each div with class hour add data-time equal with that hour
-    // function classChanger() {
-
-    //     for (let i = 0; i > 24; i++) {
-    //         if (i > date_time.getHours) {
-    //             ("<div>").addClass("future")
-    //         } if (i < date_time.getHours) {
-    //             ("<div>").addClass("past")
-    //         } if (i = date_time.getHours) {
-    //             ("<div>").addClass("present")
-    //         }
-    //     }
-    // }
-    // 2. when app loads select all items with the class hour
-
-    // 2.1 check for each of the element what is data-time and compare with current time; then 
-    //     based on that display the color of the item
-    // Adding/removing notes
-    // 1. When adding a not create an object with key the time of that note and save it in the localstorage
-    // before saving the object you need to stringify it
-    // 2. When retrieving data just select data from local storage and map it based on the key on the screen
-    // when retrievin data you need to use JSON.parse to be able to interact with that data
-    // 3. When deleting data just retrieve items from localstorage, filter the data by 
-    //    removing the item, then adding that data back to local storage
 
 });
