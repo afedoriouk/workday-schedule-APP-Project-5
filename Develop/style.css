@@ -1,0 +1,176 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1;
+}
+.container{
+  max-width: 1200px;
+}
+textarea{
+  background: #d7d6d6;
+  border: 1px;
+  border-color: grey;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.row-time-block{
+  flex-wrap: wrap;
+  column-span:inherit;
+}
+.time-block{
+  text-align: left;
+  border-radius: 14px;
+
+}
+.jumbotron {
+  text-align: center;
+  background-color: lightslategray;
+  color: rgb(77, 77, 77);
+  border-radius: 0;
+  padding-top: 20px;
+  padding-bottom:24px;
+  border-bottom: 10px solid black;
+}
+#clearFieldsBtn {
+  margin-top: 15px;
+  background-color: darkgrey;
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  border-radius: 10px;
+  line-height: 1;
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  font-size:28px;
+  font-weight: 600;
+}
+
+.description{
+  white-space: pre-wrap;
+  font-weight: 700;
+}
+
+.time-block{
+  text-align: center;
+  border-radius: 15px;
+  display:flex;
+ 
+  white-space: pre-wrap;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+  display:flex;
+}
+#currentDay{
+font-size: 28px;
+font-weight: 600;
+}
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+  padding-top: 25px;
+  padding-left: 12px;
+  font-size:28px;
+  font-weight: 600;
+  
+}
+.col-md-1 .hour .present{
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size:18px;
+  font-weight: 600;
+  display:flex;
+  flex-wrap: wrap;
+
+}
+.col-md-1 .hour{
+  background-color: hsl(36, 99%, 67%);
+  color: #000000;
+  border-top: 1px dashed #000000;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  font-size:18px;
+  font-weight: 600;
+  max-width: 100px;
+  
+}
+.col-md-10 .description{
+  background-color: #d1d1d1;
+  color: #000000;
+  border-top: 1px dashed #000000;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  font-size:18px;
+  width: 800px;
+  flex-wrap: wrap;
+}
+.row-time-div{
+  display:flex;
+}
+.col-md-1 .saveBtn{
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+  padding-top: 25px;
+  padding-left: 10px;
+  font-size:28px;
+  font-weight: 600;
+}
+.past {
+  background-color: #d3d3d3;
+  border-radius: 18px;
+  color: white;
+}
+
+.present {
+  background-color: #fb2217;
+  color: white;
+}
+
+.future {
+  background-color: #04de04;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+  block-size: auto;
+  padding-top: 25px;
+  padding-left: 12px;
+  font-size:28px;
+  font-weight: 600;
+}
+.col-md-12-time-block-description{
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+  padding-top: 25px;
+  padding-left: 12px;
+  font-size:28px;
+  font-weight: 600;
+}
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+}
